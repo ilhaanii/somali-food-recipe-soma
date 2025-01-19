@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karinta Cuntada Soomaaliyeed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../html/logo food.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <img src="fargeeto.png" height="120px">
+    </div>
+        <ul class="desktop-menu">
+            <li><a href="index.html" id="home">Bogga Hore</a></li>
+            <li><a href="home.html">Cuntooyinka</a></li>
+            <li><a href="serifice.html">Adeegyada</a></li>
+            <li><a href="aboutus.html">Nagu Saabsan</a></li>
+            <li><a href="register.html">Is Diiwaangeli</a></li>
+        </ul>
+        <ul class="mobile-menu">
+            <li><a href="index.html" id="home">Bogga Hore</a></li>
+            <li><a href="home.html">Cuntooyinka</a></li>
+            <li><a href="serifice.html">Adeegyada</a></li>
+            <li><a href="aboutus.html">Nagu Saabsan</a></li>
+            <li><a href="register.html">Is Diiwaangeli</a></li>
+            <li><button class="close-menu">&times;</button></li>
+        </ul>
+    </nav>
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+</header>
+<body>
+  <div class="slider-container">
+    <div class="slides">
+      <div class="slide">
+        <img src="b11.jpg" alt="Image 1">
+        <div class="caption">hilib iyo qudaar</div>
+      </div>  <div class="slide">
+        <img src="b13.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+          <img src="b12.jpg" alt="Image 3"> 
+        </div>
+          <div class="slide">
+            <img src="b14.jpg" alt="Image 3">
+          </div>
+            <div class="slide">
+              <img src="b15.jpg" alt="Image 3">
+            </div>
+      <div class="slide">
+        <img src="b2.jpg" alt="Image 2">
+        <div class="caption">Muufo</div>
+      </div>
+      <div class="slide">
+        <img src="b3.jpg" alt="Image 3">
+        <div class="caption">Bariis iyo Suugo</div>
+      </div>
+    </div>
+    <button class="button prev" id="prev">❮</button>
+    <button class="button next" id="next">❯</button>
+  </div>
+
+  <script>
+    const slides = document.querySelector('.slides');
+    const slide = document.querySelectorAll('.slide');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+
+    let index = 0;
+
+    function showSlide(i) {
+      index = (i + slide.length) % slide.length;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    prev.addEventListener('click', () => showSlide(index - 1));
+    next.addEventListener('click', () => showSlide(index + 1));
+  </script>
+     <section id="food">
+        <section id="food">
+            <h2>Cuntooyinka</h2>
+            <div class="food-container">
+                <!-- Food Card 1 -->
+                <div class="food-card">
+                    <a href="malawax.html">
+                        <img src="malawax.jpg" alt="Malawax iyo Shaah">
+                    </a>
+                    <div class="title">
+                        <h3>Malawax iyo Shaah</h3>
+                    </div>
+                </div>
+                <!-- Food Card 2 -->
+                <div class="food-card">
+                    <a href="bajiyo.html">
+                        <img src="bajiyyo.jpg" alt="Bajiyo">
+                    </a>
+                    <div class="title">
+                        <h3>Bajiyo</h3>
+                    </div>
+                </div>
+                <!-- Food Card 3 -->
+                <div class="food-card">
+                    <a href="doolsho.html">
+                        <img src="doolsho.jpg" alt="Doolsho">
+                    </a>
+                    <div class="title">
+                        <h3>Doolsho</h3>
+                    </div>
+                </div>
+                <!-- Food Card 4 -->
+                <div class="food-card">
+                    <a href="xalwo.html">
+                        <img src="xalwo.jpg" alt="Xalwo">
+                    </a>
+                    <div class="title">
+                        <h3>Xalwo</h3>
+                    </div>
+                </div>
+                <!-- Food Card 5 -->
+                <div class="food-card">
+                    <a href="sambus.html">
+                        <img src="sanbuuz.jpg" alt="Sambus">
+                    </a>
+                    <div class="title">
+                        <h3>Sambus</h3>
+                    </div>
+                </div>
+                <!-- Food Card 6 -->
+                <div class="food-card">
+                    <a href="qumbo.html">
+                        <img src="qumbo.jpg" alt="Qumbo">
+                    </a>
+                    <div class="title">
+                        <h3>Qumbo</h3>
+                    </div>
+                </div>
+                <!-- Food Card 7 -->
+                <div class="food-card">
+                    <a href="bariissuugo.hilib.html">
+                        <img src="bariis iyo suugo.jpg" alt="Bariis iyo Suugo">
+                    </a>
+                    <div class="title">
+                        <h3>Bariis iyo Suugo</h3>
+                    </div>
+                </div>
+                <!-- Food Card 8 -->
+                <div class="food-card">
+                    <a href="rootiiyomaraq.html">
+                        <img src="rooti.jpg" alt="Rooti iyo Caano">
+                    </a>
+                    <div class="title">
+                        <h3>Rooti iyo maraq</h3>
+                    </div>
+                </div>
+                <!-- Food Card 9 -->
+                <div class="food-card">
+                    <a href="muufo.html">
+                        <img src="muufo iyo maraq.jpg" alt="Muufo iyo Maraq">
+                    </a>
+                    <div class="title">
+                        <h3>Muufo iyo Maraq</h3>
+                    </div>
+                </div>
+                <!-- Food Card 10 -->
+                <div class="food-card">
+                    <a href="qamadi.html">
+                        <img src="qamadi.jpg" alt="Buskud iyo Shaah">
+                    </a>
+                    <div class="title">
+                        <h3>qamadi iyo suugo</h3>
+                    </div>
+                </div>
+                <!-- Food Card 11 -->
+                <div class="food-card">
+                    <a href="digiriyobariis.html">
+                        <img src="digir.jpg" alt="Digir iyo Bariis">
+                    </a>
+                    <div class="title">
+                        <h3>Digir iyo Bariis</h3>
+                    </div>
+                </div>
+                <!-- Food Card 12 -->
+                <div class="food-card">
+                    <a href="sooriyomaraq.html">
+                        <img src="soor.jpg" alt="Soor iyo Maraq">
+                    </a>
+                    <div class="title">
+                        <h3>Soor iyo Maraq</h3>
+                    </div>
+                </div>
+                <!-- Food Card 13 -->
+                <div class="food-card">
+                    <a href="kackac.html">
+                        <img src="kackac.jpg" alt="Kimis iyo Saliid">
+                    </a>
+                    <div class="title">
+                        <h3>kackac</h3>
+                    </div>
+                </div>
+                <!-- Food Card 14 -->
+                <div class="food-card">
+                    <a href="sabaayad.html">
+                        <img src="sabaayad.jpg" alt="Bur iyo Malab">
+                    </a>
+                    <div class="title">
+                        <h3>sabaayad iyo maraq</h3>
+                    </div>
+                </div>
+                <!-- Food Card 15 -->
+                <div class="food-card">
+                    <a href="suqaar.html">
+                        <img src="suqaar.jpg" alt="Basto iyo Shaah">
+                    </a>
+                    <div class="title">
+                        <h3>hilib suqaar</h3>
+                    </div>
+                </div>
+                <!-- Food Card 16 -->
+                <div class="food-card">
+                    <a href="falfaliir.html">
+                        <img src="falfaliir.jpg" alt="Saaqaf">
+                    </a>
+                    <div class="title">
+                        <h3>falfaliir</h3>
+                    </div>
+                </div>
+                <!-- Food Card 17 -->
+                <div class="food-card">
+                    <a href="canjeero.html">
+                        <img src="canjeero.jpg" alt="Suqaar iyo Canjeero">
+                    </a>
+                    <div class="title">
+                        <h3>Suqaar iyo Canjeero</h3>
+                    </div>
+                </div>
+                <!-- Food Card 18 -->
+                <div class="food-card">
+                    <a href="dhaylo.html">
+                        <img src="dhaylo.jpg" alt="Baasto iyo Suugo">
+                    </a>
+                    <div class="title">
+                        <h3>hilib dhaylo </h3>
+                    </div>
+                </div>
+                <!-- Food Card 19 -->
+                <div class="food-card">
+                    <a href="beer.html">
+                        <img src="beer2.jpg" alt="Canjeero iyo Subag">
+                    </a>
+                    <div class="title">
+                        <h3>beer</h3>
+                    </div>
+                </div>
+                <!-- Food Card 20 -->
+                <div class="food-card">
+                    <a href="salbuko.html">
+                        <img src="salbuko.jpg" alt="Halwo">
+                    </a>
+                    <div class="title">
+                        <h3>salbuko</h3>
+                    </div>
+                </div>
+                <!-- Food Card 21 -->
+                <div class="food-card">
+                    <a href="baasto.html">
+                        <img src="baasto.jpg" alt="Sambuus Qudaar">
+                    </a>
+                    <div class="title">
+                        <h3>baasto iyo suugo</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        </section>
+        <script src="java.js"></script>
+        <footer>
+            <div class="contact-container">
+               
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <p>Email: <a href="mailto:ilhaan@gmail.com"><i class="fa fa-envelope"></i> ilhaan@gmail.com</a></p>
+                        <p>Phone: <i class="fa fa-phone"></i> +252 619751051</p>
+                    </div>
+        
+                    <div class="contact-details">
+                        <p>Email: <a href="mailto:hafsaabdi757.com"><i class="fa fa-envelope"></i> hafsaabdi@gmail.com</a></p>
+                        <p>Phone: <i class="fa fa-phone"></i> +252 619514546</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+    </html>
